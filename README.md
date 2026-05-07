@@ -73,6 +73,22 @@ In this project:
 
 ---
 
+## 🔄 How to Use the Saved Model
+
+The final selected model (Logistic Regression) is saved as a `.pkl` file and can be reused without retraining.
+
+### Load the model
+
+```python
+import pickle
+
+model = pickle.load(open("models/churn_model.pkl", "rb"))
+
+⚠️ **Note**
+The input data must be preprocessed (encoded and scaled) in the same way as during training before making predictions. This ensures consistency and accurate results.
+
+---
+
 ## 🔮 Future Improvements
 
 - Hyperparameter tuning for better performance
