@@ -84,7 +84,9 @@ import pickle
 
 model = pickle.load(open("models/churn_model.pkl", "rb"))
 
-⚠️ **Note**
+```
+
+### ⚠️ Note
 The input data must be preprocessed (encoded and scaled) in the same way as during training before making predictions. This ensures consistency and accurate results.
 
 ---
