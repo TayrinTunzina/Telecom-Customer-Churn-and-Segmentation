@@ -1,6 +1,6 @@
-# 📊 Customer Churn Prediction
+# 📊 Customer Churn Prediction and Customer Segmentation
 
-This project analyzes and predicts customer churn using machine learning techniques. The goal is to identify customers at risk of leaving and provide actionable business insights for retention.
+This project analyzes and predicts customer churn using machine learning techniques. The goal is to identify customers at risk of leaving and provide actionable business insights to improve customer retention and reduce churn.
 
 ---
 
@@ -11,9 +11,40 @@ Customer churn is a critical problem in telecom businesses. Retaining existing c
 In this project:
 - Cleaned and preprocessed real-world telecom data
 - Performed exploratory data analysis (EDA)
-- Built multiple machine learning models
+- Applied customer segmentation to understand behavioral patterns
+- Built multiple machine learning models for churn prediction
 - Evaluated models using key metrics
 - Derived business insights for customer retention
+
+---
+
+## 📂 Dataset
+
+This project uses the **Telco Customer Churn dataset** from Kaggle.
+
+- - Source: [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
+The dataset contains customer demographics, subscription details, and service usage information used to predict churn behavior.
+
+---
+
+## 👥 Customer Segmentation
+
+K-Means clustering was used to segment customers based on behavior patterns.
+
+### Features used:
+- Tenure
+- Monthly Charges
+- Total Charges
+
+### Why these features?
+These variables represent customer loyalty, spending behavior, and overall value, making them suitable for grouping customers into meaningful segments.
+
+### Outcome:
+Customers were grouped into distinct segments such as:
+- High-value loyal customers
+- High-risk new customers
+- Budget customers
 
 ---
 
@@ -41,7 +72,7 @@ In this project:
 | Random Forest      | 79.35%   | 66.14%    | 45.04% | 53.59%   |
 | XGBoost            | 79.13%   | 62.70%    | 52.28% | 57.02%   |
 
-📌 Logistic Regression was selected as the final model based on better recall and overall balance.
+📍 Logistic Regression was selected as the final model based on better recall and overall balance.
 
 ---
 
@@ -96,6 +127,14 @@ The input data must be preprocessed (encoded and scaled) in the same way as duri
 - Hyperparameter tuning for better performance
 - Deploy model using Streamlit
 - Real-time churn prediction system
+
+---
+
+## 📌 Key Highlights
+
+- Combined supervised learning (churn prediction) with unsupervised learning (clustering)
+- Business-driven feature selection and interpretation
+- End-to-end ML pipeline from data cleaning to insights
 
 ---
 
